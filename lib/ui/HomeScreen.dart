@@ -1,6 +1,7 @@
 
 
 
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget{
@@ -12,7 +13,12 @@ class HomeScreen extends StatelessWidget{
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('News App'),
+        elevation: 0,
+        title: Text('News App' , style: TextStyle(
+          fontSize: 22 , fontWeight: FontWeight.bold
+        ),),
+        centerTitle: true,
+
       ),
 
       body: Container(
