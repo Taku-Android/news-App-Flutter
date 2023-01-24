@@ -5,12 +5,19 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:news_app/ui/HomeScreen.dart';
 
-class SplashVeiw extends StatelessWidget{
+class SplashVeiw extends StatefulWidget{
   static const String routeName = 'splash';
+
+  @override
+  State<SplashVeiw> createState() => _SplashVeiwState();
+}
+
+class _SplashVeiwState extends State<SplashVeiw> {
   @override
   Widget build(BuildContext context) {
 
-    Timer(Duration(seconds: 3) , (){
+
+    Timer(const Duration(seconds: 2) , (){
       Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
     });
 
@@ -40,5 +47,4 @@ class SplashVeiw extends StatelessWidget{
     );
 
   }
-
 }
