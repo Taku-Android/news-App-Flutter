@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/Core/Model/NewsResponse.dart';
 import 'package:news_app/Core/Model/Source.dart';
 import 'package:news_app/Core/api/api_manager.dart';
+import 'package:news_app/ui/news/new_item.dart';
 
 class NewsList extends StatelessWidget {
 
@@ -33,7 +34,9 @@ class NewsList extends StatelessWidget {
           return ListView.builder(
             itemBuilder: (_ , index){
 
-              return Text('${newsList![index].title}');
+              return NewItem(newsList![index]);
+
+              //Text('${newsList![index].title}');
             },
             itemCount: newsList?.length,);
 

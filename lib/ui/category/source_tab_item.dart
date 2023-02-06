@@ -19,7 +19,7 @@ class SourceTabItem extends StatelessWidget {
         border: Border.all(color: Colors.green , width: 2)
       ),
       child: Text(source.name! , style: TextStyle(
-        fontSize: 20 , color: selected? Colors.white : Colors.green
+        fontSize: 16 , color: selected? Colors.white : Colors.green
       ),)
     );
   }
