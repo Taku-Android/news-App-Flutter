@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/HomeScreen.dart';
+import 'package:news_app/ui/home/HomeScreen.dart';
 import 'package:news_app/ui/SplashView.dart';
 
 void main(){
