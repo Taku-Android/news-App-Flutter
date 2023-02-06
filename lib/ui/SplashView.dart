@@ -3,7 +3,7 @@ import 'dart:async';
 
 
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/HomeScreen.dart';
+import 'package:news_app/ui/home/HomeScreen.dart';
 
 class SplashVeiw extends StatefulWidget{
   static const String routeName = 'splash';

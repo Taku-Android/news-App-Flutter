@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/category_list_screen.dart';
+import 'package:news_app/ui/category/category_list_screen.dart';
 
 import 'Category_Grid_View.dart';
+
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home';
@@ -14,13 +15,13 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Category> category = [
     Category("sports", "assets/images/sports.png", "Sports",
         const Color.fromARGB(255, 201, 28, 34)),
-    Category("Politics", "assets/images/Politics.png", "Politics",
+    Category("general", "assets/images/Politics.png", "General",
         const Color.fromARGB(255, 0, 62, 144)),
     Category("health", "assets/images/health.png", "Health",
         const Color.fromARGB(255, 237, 30, 121)),
     Category("business", "assets/images/bussines.png", "Business",
         const Color.fromARGB(255, 207, 126, 72)),
-    Category("entertainment", "assets/images/environment.png", "Enviroment",
+    Category("technology", "assets/images/environment.png", "technology",
         const Color.fromARGB(255, 72, 130, 207)),
     Category("science", "assets/images/science.png", "Science",
         const Color.fromARGB(255, 242, 211, 82)),
@@ -62,9 +63,9 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: const EdgeInsets.only(top: 25, left: 10),
                 child: InkWell(
-                  onTap: (){
+                  onTap: () {
                     setState(() {
-                      selectedCategory = null ;
+                      selectedCategory = null;
                       Navigator.pop(context);
                     });
                   },
